@@ -10,6 +10,7 @@ body {
     flex-direction: column;
     padding: 20px;
     box-sizing: border-box;
+    overflow-y: scroll;
 }
 
 .glass-container {
@@ -29,11 +30,14 @@ body {
 }
 
 .profile-picture-container {
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
     width: 120px;
     height: 120px;
     border-radius: 50%;
     overflow: hidden;
-    margin-bottom: -60px;
     z-index: 1;
     border: 5px solid rgba(255, 255, 255, 0.3);
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
