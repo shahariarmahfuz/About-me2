@@ -121,7 +121,7 @@ body {
     }
 
     .glass-container.small {
-        height: 500px; /* Ensure the second box is the same height as the first box on desktop view */
+        height: auto; /* Ensure the second box is the same height as the first box on desktop view */
     }
 }
 
@@ -138,7 +138,7 @@ body {
     }
 
     .glass-content {
-        padding-top: 80px; /* Adjust padding for smaller screens */
+        padding-top: auto; /* Adjust padding for smaller screens */
     }
 
     .profile-picture-container {
