@@ -142,7 +142,7 @@ body {
     }
 
     .profile-picture-container {
-        top: 30px; /* Adjust position for smaller screens */
+        top: -90px; /* Adjust position for smaller screens */
         width: 70px;
         height: 70px;
     }
