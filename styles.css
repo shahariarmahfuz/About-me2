@@ -45,6 +45,7 @@ body {
 
 .glass-content {
     padding: 20px;
+    padding-top: 70px; /* Adjusted to accommodate the profile picture */
     color: #ffdf80;
 }
 
