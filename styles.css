@@ -2,7 +2,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: flex-start; /* Changed to flex-start to allow vertical scrolling */
-    height: 100vh;
+    min-height: 100vh; /* Ensure body takes up at least the full height of the viewport */
     background: #1a1a1a; /* Dark background color */
     margin: 0;
     overflow-y: scroll; /* Enable vertical scrolling */
@@ -10,6 +10,7 @@ body {
     font-family: Arial, sans-serif; /* Set default font */
     flex-direction: column; /* Stack containers vertically */
     padding: 20px; /* Add padding to ensure distance from edges */
+    box-sizing: border-box;
 }
 
 .glass-container {
@@ -29,6 +30,7 @@ body {
     padding: 20px; /* Add padding to avoid text touching edges */
     text-align: left;
     box-sizing: border-box; /* Ensure padding is included in width/height calculations */
+    overflow-y: auto; /* Enable vertical scrolling for content within the container */
 }
 
 .profile-picture-container {
@@ -74,13 +76,14 @@ body {
 .glass-content {
     color: #ffdf80; /* Warm white with a hint of gold */
     width: 100%; /* Make content take up the full width */
-    height: 100%; /* Make content take up the full height */
+    flex-grow: 1; /* Allow content to grow and fill the available space */
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     padding-top: 80px; /* Ensure content starts below the profile picture */
     box-sizing: border-box; /* Ensure padding is included in width/height calculations */
+    overflow-y: auto; /* Enable scrolling within the content area */
 }
 
 .glass-content h1, .glass-content h3, .glass-content p {
