@@ -31,11 +31,11 @@ body {
 
 .profile-picture-container {
     position: absolute;
-    top: -40px;
+    top: -60px;
     left: 50%;
     transform: translateX(-50%);
-    width: 80px;
-    height: 80px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     overflow: hidden;
     z-index: 1;
@@ -76,7 +76,7 @@ body {
     color: #ffdf80;
     width: 100%;
     flex-grow: 1;
-    padding-top: 60px; /* Adjusted to ensure profile picture is fully inside the box */
+    padding-top: 80px; /* Adjusted to ensure profile picture is fully inside the box */
     box-sizing: border-box;
     overflow-y: auto;
     text-align: left;
@@ -121,7 +121,7 @@ body {
     }
 
     .glass-container.small {
-        height: 300px;
+        height: 500px; /* Ensure the second box is the same height as the first box on desktop view */
     }
 }
 
@@ -132,21 +132,18 @@ body {
         margin-right: auto;
     }
 
-    .glass-container.large {
-        height: auto; /* Allow height to adjust based on content */
-    }
-
+    .glass-container.large,
     .glass-container.small {
         height: auto; /* Allow height to adjust based on content */
     }
 
     .glass-content {
-        padding-top: 60px; /* Adjust padding for smaller screens */
+        padding-top: 80px; /* Adjust padding for smaller screens */
     }
 
     .profile-picture-container {
         top: -40px; /* Adjust position for smaller screens */
-        width: 80px;
-        height: 80px;
+        width: 100px;
+        height: 100px;
     }
 }
