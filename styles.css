@@ -10,7 +10,7 @@ body {
     flex-direction: column;
     padding: 20px;
     box-sizing: border-box;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 .glass-container {
@@ -122,5 +122,31 @@ body {
 
     .glass-container.small {
         height: 300px;
+    }
+}
+
+@media (max-width: 599px) {
+    .glass-container {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .glass-container.large {
+        height: auto; /* Allow height to adjust based on content */
+    }
+
+    .glass-container.small {
+        height: auto; /* Allow height to adjust based on content */
+    }
+
+    .glass-content {
+        padding-top: 60px; /* Adjust padding for smaller screens */
+    }
+
+    .profile-picture-container {
+        top: -40px; /* Adjust position for smaller screens */
+        width: 100px;
+        height: 100px;
     }
 }
