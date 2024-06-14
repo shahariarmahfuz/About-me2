@@ -69,3 +69,11 @@ body {
         transform: scale(1);
     }
 }
+
+/* Additional CSS to stack boxes vertically on smaller screens */
+@media (max-width: 600px) {
+    .glass-container {
+        position: static;
+        margin-bottom: 20px;
+    }
+}
