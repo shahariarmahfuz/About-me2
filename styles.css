@@ -1,11 +1,11 @@
 body {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start; /* Changed to flex-start to allow vertical scrolling */
     height: 100vh;
     background: #1a1a1a; /* Dark background color */
     margin: 0;
-    overflow: hidden; /* Hide overflow to prevent scrollbars */
+    overflow-y: scroll; /* Enable vertical scrolling */
     color: #fff; /* White text color */
     font-family: Arial, sans-serif; /* Set default font */
     flex-direction: column; /* Stack containers vertically */
@@ -24,12 +24,11 @@ body {
     animation: fadeIn 2s ease-out; /* Animation for the opening effect */
     margin-bottom: 20px; /* Distance between containers */
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: flex-start; /* Align items at the start */
     padding: 20px; /* Add padding to avoid text touching edges */
     text-align: left;
     box-sizing: border-box; /* Ensure padding is included in width/height calculations */
-    flex-direction: column; /* Stack elements vertically */
 }
 
 .profile-picture-container {
